@@ -1,15 +1,15 @@
 
-# BORRADOR CLASE NAUTA. LOS CAMBIOS A REALIZAR ESTÁN EN MAYUSCULAS
-
 import os
 import re
 import PIL
 import numpy as np
 import matplotlib.pyplot as plt
-from datetime import datetime
+from datetime import datetime, timedelta
 from numbers import Number
 from numpy.fft import rfft
 from scipy.io.wavfile import read as wavread
+
+## NAUTA
 
 class NAUTA():
     '''
@@ -219,6 +219,7 @@ class NAUTA():
        
     # AQUÍ FALTAN LOS MÉTODOS PROPIOS...
 
+## WavNAUTA
 
 class WavNAUTA(NAUTA):
     '''
@@ -234,9 +235,7 @@ class WavNAUTA(NAUTA):
         self.directory = os.path.dirname(_file)
         self.device_id, self.date_str, self.time_str = self._extract_attributes_from_wav_filename(self.filename)
         self.start_timestamp = self._generate_timestamp(self.date_str, self.time_str)
-        self.duration = len(self.signal) / self.fs # seconds
-        self.end_timestamp = self.start_timestamp + timedelta(seconds=self.duration)
-        self.datetime = self._generate_datetime(self.timestamp)       
+        self.datetime = self._generate_datetime(self.start_timestamp)       
         
         # Read the WAV file
         if isinstance(_file, str) and _file.endswith('.wav'):
@@ -245,6 +244,9 @@ class WavNAUTA(NAUTA):
                 self.signal = self.signal[:, channel]  # Take only one channel
         else:
             raise TypeError(f'Input is not a path to a .wav file: {_file}')
+        
+        self.duration = len(self.signal) / self.fs # seconds
+        self.end_timestamp = self.start_timestamp + timedelta(seconds=self.duration)
         
         # Initialize LTSA defauolt attributes
         self._init_ltsa_params()
@@ -276,9 +278,11 @@ class WavNAUTA(NAUTA):
         # Convert the datetime object to a formatted string
         return timestamp.strftime("%Y/%m/%d %H:%M:%S")
   
+## RawNAUTA
 
 class RawNAUTA(NAUTA):
     '''
     RawNAUTA is a subclass of NAUTA for handling raw audio data.
     '''
     pass
+    
