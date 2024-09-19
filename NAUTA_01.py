@@ -229,7 +229,7 @@ class WavNAUTA(NAUTA):
         # Ensure that NAUTA is not instantiated directly
         super().__init__()       
         # Initial attributes from name and create empty attributes
-        self.object_class = "WavNauta"
+        self.object_class = "WavNAUTA"
         self.filename = os.path.basename(_file)
         self.directory = os.path.dirname(_file)
         self.device_id, self.date_str, self.time_str = self._extract_attributes_from_wav_filename(self.filename)
