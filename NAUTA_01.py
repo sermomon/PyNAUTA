@@ -233,8 +233,9 @@ class WavNAUTA(NAUTA):
         self.filename = os.path.basename(_file)
         self.directory = os.path.dirname(_file)
         self.device_id, self.date_str, self.time_str = self._extract_attributes_from_wav_filename(self.filename)
-        # FALTA AÑADIR TIMESTAMP FINAL Y DECIDIR NOMBRES: self.start_timestamp, self.end_timestam, self.datetime
-        self.timestamp = self._generate_timestamp(self.date_str, self.time_str)
+        self.start_timestamp = self._generate_timestamp(self.date_str, self.time_str)
+        self.duration = len(self.signal) / self.fs # seconds
+        self.end_timestamp = self.start_timestamp + timedelta(seconds=self.duration)
         self.datetime = self._generate_datetime(self.timestamp)       
         
         # Read the WAV file
