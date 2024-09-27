@@ -152,6 +152,9 @@ class NAUTA():
         '''
         FALTA DOCUMENTAR Y COMENTAR
         '''
+        if not hasattr(self, 'ltsa'):
+            self.compute_ltsa()
+        
         if isinstance(resize, tuple) and len(resize) == 2:
             pimg = PIL.Image.fromarray(self.ltsa) # img = imresize(self.ltsa, resize, interp)
             pimg = pimg.resize(resize, resample=interp)
