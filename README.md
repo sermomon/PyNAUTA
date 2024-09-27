@@ -4,7 +4,8 @@ Brief introduction to NAUTA
 
 https://www.nauta-rcs.it/IT/
 
-![Imagen1](https://github.com/user-attachments/assets/8673ac67-af9c-4810-bda6-9aea55b16048)
+![Imagen1](https://github.com/user-attachments/assets/b2debcf7-71eb-4853-8019-d0f8e0da6328)
+
 
 
 ```
