@@ -183,6 +183,12 @@ class NAUTA():
         plt.ylabel('Frequency (Hertz)')
 
         #return img
+    
+    def plt_signal(self)
+        if self.signal.ndim > 1:
+            plt.plot(signal) 
+            plt.xlabel('samples')
+            plt.ylabel('Amplitude')
             
     def crop_ltsa(self, tmin=0, tmax=None, fmin=0, fmax=None):
         '''
