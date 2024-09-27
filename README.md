@@ -39,4 +39,4 @@ Required features:
 
 1) `split()` como función fuera de la clase que reciba un objeto de tipo *WavNAUTA* o *RawNAUTA*
 2) crear vectores de tiempo y frecuencia del ltsa: `self.ltsa_freq`, `self.ltsa_time`
-3) cuando ejecuta `self.plot_ltsa()` si self.ltsa es None hay que ejecutar primero `self.compute_ltsa()`
+3) cuando ejecuta `self.plot_ltsa()` si `self.ltsa` es `None` hay que ejecutar primero `self.compute_ltsa()`
