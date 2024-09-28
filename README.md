@@ -75,8 +75,6 @@ rec.plot_waveform()
 ...
 ...
 
-```
-
 ### Contributions Welcome
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](#)
 
