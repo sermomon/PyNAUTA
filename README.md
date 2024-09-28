@@ -1,18 +1,14 @@
-# pyNAUTA
+# PyNAUTA
 
-Brief introduction to NAUTA class
+Software tools for data management and analysis of Acoustic Passive Monitoring Systems data captured by NAUTA scientific recorders. This tool has been developed by the Underwater Acoustics Group of the Applied Physics Department of the UNIVERSITAT Politècnica de València, but it is open to new contributors.
 
-https://www.nauta-rcs.it/IT/
-
-![Imagen1](https://github.com/user-attachments/assets/b2debcf7-71eb-4853-8019-d0f8e0da6328)
-
-
+NAUTA scientific: nhttps://www.nauta-rcs.it/IT/
 
 ```
 import NAUTA
 
 # Instance NAUTA object from a WAV file
-file_path = "C:/Lab/projects/vessel_acoustic_signature/data/example/NAUTA/23d51_20240415_084603.wav"
+file_path = "C:/NAUTA/23d51_20240415_084603.wav"
 record = WavNAUTA(file_path)
 
 # Get file info
