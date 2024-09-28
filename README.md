@@ -26,6 +26,7 @@ The recordings made by NAUTA scientific instruments are stored in Waveform File 
 
 ```
 # Instance a new NAUTA (WavNAUTA) object
+
 rec = WavNAUTA('C:/data/NAUTA/23d51_20240415_084603.wav')
 ```
 
@@ -33,6 +34,7 @@ NAUTA objects (WavNAUTA) are initialized with some useful default attributes. Fo
 
 ```
 # Get some useful information from a NAUTA (WavNAUTA) object
+
 print('Filename: ', rec.filename)
 print('Source directory :', rec.directory)
 print('Device ID:', rec.device_id)
