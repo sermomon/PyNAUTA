@@ -25,7 +25,7 @@ import PyNAUTA
 The recordings made by NAUTA scientific instruments are stored in Waveform File Format (WAV) files with the following structure `<device_id_yyyymmdd_hhmmss.wav>`. You can instantiate a NAUTA object from the `WavNAUTA()` constructor:
 
 ```
-record = WavNAUTA('C:/data/NAUTA/23d51_20240415_084603.wav')
+rec = WavNAUTA('C:/data/NAUTA/23d51_20240415_084603.wav')
 ```
 
 ### Documentation
