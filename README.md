@@ -82,6 +82,21 @@ rec.plot_waveform()
 
 
 
+
+
+
+
+
+
+...
+
+
+
+
+
+
+
+
 ```
 import NAUTA
 
