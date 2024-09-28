@@ -2,7 +2,7 @@
 
 Software tools for data management and analysis of Acoustic Passive Monitoring Systems data captured by NAUTA scientific recorders. This tool has been developed by the Underwater Acoustics Group of the Applied Physics Department of the UNIVERSITAT Politècnica de València, but it is open to new contributors.
 
-NAUTA scientific: nhttps://www.nauta-rcs.it/IT/
+NAUTA scientific: https://www.nauta-rcs.it/IT/
 
 ```
 import NAUTA
