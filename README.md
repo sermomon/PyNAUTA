@@ -38,7 +38,7 @@ If you do not already have a recording taken by a NAUTA scientific device, a sam
 rec = load_nauta_example()
 ```
 
-NAUTA objects (WavNAUTA) are initialized with some useful default attributes. For example, the filename, the source directory, the device id, the start date and time of the recording, the start and end timestamp, or the duration of the recording:
+NAUTA objects (WavNAUTA) are initialized with some default attributes. For example, the filename, the source directory, the device id, the start date and time of the recording, the start and end timestamp, or the duration of the recording:
 
 ```
 # Get some useful information from a NAUTA (WavNAUTA) object
