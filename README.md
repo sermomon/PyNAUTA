@@ -30,6 +30,14 @@ The recordings made by NAUTA scientific instruments are stored in Waveform File 
 rec = WavNAUTA('C:/data/NAUTA/23d51_20240415_084603.wav')
 ```
 
+If you do not already have a recording taken by a NAUTA scientific device, a sample recording is included in the package and can be accessed as follows:
+
+```
+# Load example data
+
+rec = load_nauta_example()
+```
+
 NAUTA objects (WavNAUTA) are initialized with some useful default attributes. For example, the filename, the source directory, the device id, the start date and time of the recording, the start and end timestamp, or the duration of the recording:
 
 ```
