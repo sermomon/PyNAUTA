@@ -45,3 +45,4 @@ record.plot_ltsa()
 
 1) `split()` como función fuera de la clase que reciba un objeto de tipo *WavNAUTA* o *RawNAUTA*
 2) crear vectores de tiempo y frecuencia del ltsa: `self.ltsa_freq`, `self.ltsa_time`
+3) modificar método `plot_waveform()` para que muestre el tiempo en lugar de las muestras en el eje X
