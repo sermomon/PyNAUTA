@@ -62,7 +62,7 @@ record.plot_ltsa()
 
 ```
 
-## Contributions Welcome
+### Contributions Welcome
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](#)
 
 If you find any bug in the code or have any improvements in mind then feel free to generate a pull request.
