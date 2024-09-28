@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="pyNAUTA",
+    name="PyNAUTA",
     version="0.1.0",
     description="Software tools for data management and analysis of Acoustic Passive Monitoring Systems data captured by NAUTA scientific recorders.",
     author="Sergio Morell-Monzó",
