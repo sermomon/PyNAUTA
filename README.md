@@ -90,5 +90,5 @@ If you find any bug in the code or have any improvements in mind then feel free 
 6) crear dos atributos nuevos vectores de tiempo y frecuencia del ltsa: `self.ltsa_freq`, `self.ltsa_time`
 7) crear métodos para calcular y graficar el SPL: _init_spl_params(), set_spl_params(), compute_spl(), plot_spl()
 8) crear metodo: export_to_raw() que guarde la señal y los atributos en un Zarr o similar que ocupe menos espacio.
-9) crear métodos: set_geographic_info() y plot_map() -mejorar nombre- que asigne unas cordenadas geográficas y sistema de referencia al archivo y permita visualizarlo en un mapa.
+9) crear métodos: set_geographic_info() y show_on_map() -mejorar nombre- que asigne unas cordenadas geográficas y sistema de referencia al archivo y permita visualizarlo en un mapa.
 10) crear método: save_metadata_to_wav() que permita exportar el wav con todos los metadatos que se han cargado. En este caso solo la información geográfica y alguna cosa más que no se puede cargar automaticamente.
