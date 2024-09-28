@@ -1,4 +1,4 @@
-# PyNAUTA
+# 🌊🎙️🌍 PyNAUTA
 
 Software tools for data management and analysis of Acoustic Passive Monitoring Systems data captured by NAUTA scientific recorders. This tool has been developed by the Underwater Acoustics Group of the Applied Physics Department of the Universitat Politècnica de València, but it is open to new contributors.
 
