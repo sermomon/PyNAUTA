@@ -44,7 +44,23 @@ print('End timestamp: ', rec.end_timestamp)
 print('Recording duration: ', rec.duration, '[sec.]')
 ```
 
+Of course, the sample rate and the number of samples can also be accessed:
 
+```
+print('Sampling rate :', rec.fs)
+print('Number of samples :', rec.samples) #!
+
+```
+
+The recorded signal is stored in the signal attribute. It is possible to access the signal and display the waveform as follows:
+
+```
+# Access to the signal
+rec.signal
+
+# Plot waveform
+rec.plot_waveform()
+```
 
 ### Documentation
 
