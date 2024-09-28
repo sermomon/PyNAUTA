@@ -41,7 +41,7 @@ print('Device ID:', rec.device_id)
 print('Date and time: ', rec.datetime)
 print('Start timestamp: ', rec.start_timestamp)
 print('End timestamp: ', rec.end_timestamp)
-print('Recording duration: ', rec.duration)
+print('Recording duration: ', rec.duration, '[sec.]')
 ```
 
 
