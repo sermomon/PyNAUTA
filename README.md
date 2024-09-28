@@ -6,7 +6,7 @@ NAUTA scientific: https://www.nauta-rcs.it/IT/
 
 ### Installation
 
-Binary installers are available at the Python Package Index ([PyPI](https://pypi.org/project/pandas)).
+Binary installers are available at the Python Package Index ([PyPI](https://pypi.org/project/PyNAUTA)).
 
 ```
 pip install PyNAUTA
