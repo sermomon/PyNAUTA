@@ -4,6 +4,29 @@ Software tools for data management and analysis of Acoustic Passive Monitoring S
 
 NAUTA scientific: https://www.nauta-rcs.it/IT/
 
+## Installation
+
+Binary installers are available at the Python Package Index (PyPI).
+
+```
+!pip install PyNAUTA
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 import NAUTA
 
