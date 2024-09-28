@@ -184,11 +184,23 @@ class NAUTA():
 
         #return img
     
-    def plot_waveform(self)
-        if self.signal.ndim > 1:
-            plt.plot(signal) 
-            plt.xlabel('samples')
+        def plot_waveform(self):
+            '''
+            Plots the waveform of the audio signal.
+            '''
+            if not hasattr(self, 'signal') or self.signal is None:
+                raise ValueError('No audio signal available to plot.')
+    
+            time = np.linspace(0, len(self.signal) / self.fs, num=len(self.signal))
+    
+            plt.figure(figsize=(10, 4))
+            plt.plot(time, self.signal)  # Plot the signal amplitude against time
+            plt.title('Waveform of the Audio Signal')
+            plt.xlabel('Time (seconds)')
             plt.ylabel('Amplitude')
+            plt.grid(True)  # Optional: add a grid for better visibility
+            plt.show()
+
             
     def crop_ltsa(self, tmin=0, tmax=None, fmin=0, fmax=None):
         '''
