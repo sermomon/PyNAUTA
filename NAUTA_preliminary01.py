@@ -184,7 +184,7 @@ class NAUTA():
 
         #return img
     
-    def plt_signal(self)
+    def plot_waveform(self)
         if self.signal.ndim > 1:
             plt.plot(signal) 
             plt.xlabel('samples')
