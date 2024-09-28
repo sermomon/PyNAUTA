@@ -71,63 +71,9 @@ rec.plot_waveform()
 ```
 
 ### Documentation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ...
-
-
-
-
-
-
-
-
-```
-import NAUTA
-
-# Instance NAUTA object from a WAV file
-file_path = "C:/NAUTA/23d51_20240415_084603.wav"
-record = WavNAUTA(file_path)
-
-# Get file info
-record.filename
-record.directory
-record.device_id
-record.date_str
-record.time_str
-
-# Get signal alf fs
-record.fs
-record.signal
-
-# Get time info
-record.datetime
-record.start_timestamp
-record.end_timestamp
-record.duration
-
-# Compute LTSA
-hasattr(record, 'ltsa')
-record.compute_ltsa()
-
-# Plot LTSA
-record.plot_ltsa()
+...
+...
 
 ```
 
@@ -138,6 +84,13 @@ If you find any bug in the code or have any improvements in mind then feel free 
 
 ## Required features:
 
-1) `split()` como función fuera de la clase que reciba un objeto de tipo *WavNAUTA* o *RawNAUTA*
-2) crear vectores de tiempo y frecuencia del ltsa: `self.ltsa_freq`, `self.ltsa_time`
-3) modificar método `plot_waveform()` para que muestre el tiempo en lugar de las muestras en el eje X
+1) `split()` como función fuera de la clase que reciba un objeto de tipo *WavNAUTA* o *RawNAUTA* y recorte el archivo.
+2) `join()` como función fuera de la clase que reciba una lista de *WavNAUTA* o "RawNAUTA" para unir archivos consecutivos.
+3) `fusion()` como función fuera de la clase que reciba una lista de *WavNAUTA* o "RawNAUTA" para unir archivos NO consecutivos (artificial).
+4) `rename_wav()` -mejorar el nombre- función fuera de la clase que reciba una lista de *WavNAUTA* o "RawNAUTA" y estandarice el nombre según <device_id_yyyymmdd_hhmmss.wav>.
+5) `data_report()` como función fuera de la clase que reciba una carpeta y genere un report de los archivos disponibles y sus características.
+6) crear dos atributos nuevos vectores de tiempo y frecuencia del ltsa: `self.ltsa_freq`, `self.ltsa_time`
+7) crear métodos para calcular y graficar el SPL: _init_spl_params(), set_spl_params(), compute_spl(), plot_spl()
+8) crear metodo: export_to_raw() que guarde la señal y los atributos en un Zarr o similar que ocupe menos espacio.
+9) crear métodos: set_geographic_info() y plot_map() -mejorar nombre- que asigne unas cordenadas geográficas y sistema de referencia al archivo y permita visualizarlo en un mapa.
+10) crear método: save_metadata_to_wav() que permita exportar el wav con todos los metadatos que se han cargado. En este caso solo la información geográfica y alguna cosa más que no se puede cargar automaticamente.
