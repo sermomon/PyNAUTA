@@ -200,8 +200,7 @@ class NAUTA():
         plt.ylabel('Amplitude')
         plt.grid(True)  # Optional: add a grid for better visibility
         plt.show()
-
-            
+  
     def crop_ltsa(self, tmin=0, tmax=None, fmin=0, fmax=None):
         '''
         FALTA DOCUMENTAR Y COMENTAR
