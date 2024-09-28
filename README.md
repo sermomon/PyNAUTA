@@ -1,6 +1,6 @@
 # pyNAUTA
 
-Brief introduction to NAUTA
+Brief introduction to NAUTA class
 
 https://www.nauta-rcs.it/IT/
 
