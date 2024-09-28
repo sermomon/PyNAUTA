@@ -83,9 +83,9 @@ If you find any bug in the code or have any improvements in mind then feel free 
 ## Required features:
 
 1) `split()` como función fuera de la clase que reciba un objeto de tipo *WavNAUTA* o *RawNAUTA* y recorte el archivo.
-2) `join()` como función fuera de la clase que reciba una lista de *WavNAUTA* o "RawNAUTA" para unir archivos consecutivos.
-3) `fusion()` como función fuera de la clase que reciba una lista de *WavNAUTA* o "RawNAUTA" para unir archivos NO consecutivos (artificial).
-4) `rename_wav()` -mejorar el nombre- función fuera de la clase que reciba una lista de *WavNAUTA* o "RawNAUTA" y estandarice el nombre según <device_id_yyyymmdd_hhmmss.wav>.
+2) `join()` como función fuera de la clase que reciba una lista de *WavNAUTA* o *RawNAUTA* para unir archivos consecutivos.
+3) `fusion()` como función fuera de la clase que reciba una lista de *WavNAUTA* o *RawNAUTA* para unir archivos NO consecutivos (artificial).
+4) `rename_wav()` -mejorar el nombre- función fuera de la clase que reciba una lista de *WavNAUTA* o *RawNAUTA* y estandarice el nombre según <device_id_yyyymmdd_hhmmss.wav>.
 5) `data_report()` como función fuera de la clase que reciba una carpeta y genere un report de los archivos disponibles y sus características.
 6) crear dos atributos nuevos vectores de tiempo y frecuencia del ltsa: `self.ltsa_freq`, `self.ltsa_time`
 7) crear métodos para calcular y graficar el SPL: `_init_spl_params()`, `set_spl_params()`, `compute_spl()`, `plot_spl()`.
