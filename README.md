@@ -37,6 +37,11 @@ record.plot_ltsa()
 
 ```
 
+## Contributions Welcome
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](#)
+
+If you find any bug in the code or have any improvements in mind then feel free to generate a pull request.
+
 ## Required features:
 
 1) `split()` como función fuera de la clase que reciba un objeto de tipo *WavNAUTA* o *RawNAUTA*
