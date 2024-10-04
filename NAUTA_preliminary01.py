@@ -195,7 +195,7 @@ class NAUTA():
     
         plt.figure(figsize=(10, 4))
         plt.plot(time, self.signal)  # Plot the signal amplitude against time
-        plt.title('Waveform of the Audio Signal')
+        plt.title('Waveform')
         plt.xlabel('Time (seconds)')
         plt.ylabel('Amplitude')
         plt.grid(True)  # Optional: add a grid for better visibility
