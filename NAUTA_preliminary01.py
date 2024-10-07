@@ -1,7 +1,6 @@
 
 import os
 import re
-import re
 import PIL
 import numpy as np
 import matplotlib.pyplot as plt
