@@ -307,7 +307,7 @@ class RawNAUTA(NAUTA):
     '''
     pass
 
-## Support functions:
+## Tools:
 
 def add_device_id(input_path, device_id):
     """
@@ -352,8 +352,6 @@ def add_device_id(input_path, device_id):
                 print(f"Warning: {file_path} is not a valid .wav file or does not exist.")
     else:
         print("Error: The provided argument is neither a folder, a .wav file, nor a valid list of .wav files.")
-
-import os
 
 def remove_fs_str(input_path):
     """
