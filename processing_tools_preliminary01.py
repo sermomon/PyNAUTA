@@ -1,4 +1,7 @@
 
+import os
+import re
+
 def add_device_id(input_path, device_id):
     """
     Adds a user-defined prefix to a .wav file, a list of .wav files, or all .wav files in a specified folder. Useful
